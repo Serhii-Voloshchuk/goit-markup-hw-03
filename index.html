@@ -13,24 +13,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="./css/styles.css" />
     
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="nav">
           <a href="./index.html" class="logo"> Web <span class="studio-logo">Studio</span></a>
-          <ul>
+          <ul class="nav-list">
             <li><a class="link" href="./index.html">Studio</a></li>
             <li><a class="link" href="">Portfolio</a></li>
             <li><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
-          <ul>
+          <ul class="address-title">
             <li>
               <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -51,30 +51,30 @@
         </section>
         <section class="section">
           <div class="container">
-          <h2>Title</h2>
+          <h2 class="visually-hidden">Title</h2>
           <ul class="list-qualities">
-            <li>
+            <li class="list-qualities-point">
               <h3 class="title-qualities">Strategy</h3>
               <p class="qualities-description">
                 Our goal is to identify the business problem to walk away with the
                 perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="list-qualities-point">
               <h3 class="title-qualities">Punctuality</h3>
               <p class="qualities-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="list-qualities-point">
               <h3 class="title-qualities">Diligence</h3>
               <p class="qualities-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="list-qualities-point">
               <h3 class="title-qualities">Technologies</h3>
               <p class="qualities-description">
                 Design practice focused on digital experiences. We bring forth a
@@ -86,28 +86,37 @@
         </section>
         <section class="section">
           <div class="container">
-          
           <h2 class="our-team-title">Our Team</h2>
           <ul class="team-list">
             <li class="person-card">
               <img src="./images/img-3.jpg" alt="Mark-Guerrero" width="264" />
-              <h3 class="title-qualities">Mark Guerrero</h3>
-              <p class="qualities-description">Product Designer</p>
+              <div class="person-card-info">
+                <h3 class="title-qualities">Mark Guerrero</h3>
+                <p class="qualities-description">Product Designer</p>
+              </div>
+              
             </li>
             <li class="person-card">
               <img src="./images/img-2.jpg" alt="Tom-Ford" width="264" />
-              <h3 class="title-qualities">Tom Ford</h3>
-              <p class="qualities-description">Frontend Developer</p>
+              <div class="person-card-info">
+                <h3 class="title-qualities">Tom Ford</h3>
+                <p class="qualities-description">Frontend Developer</p>
+              </div>
             </li>
             <li class="person-card">
               <img src="./images/img-1.jpg" alt="Camila-Garcia" width="264" />
-              <h3 class="title-qualities">Camila Garcia</h3>
-              <p class="qualities-description">Marketing</p>
-            </li>
+              <div class="person-card-info">
+                <h3 class="title-qualities">Camila Garcia</h3>
+                <p class="qualities-description">Marketing</p>
+              </div>
+                  </li>
             <li class="person-card">
               <img src="./images/img.jpg" alt="Daniel-Wilson" width="264" />
-              <h3 class="title-qualities">Daniel Wilson</h3>
-              <p class="qualities-description">UI Designer</p>
+              <div class="person-card-info">
+                <h3 class="title-qualities">Daniel Wilson</h3>
+                <p class="qualities-description">UI Designer</p>
+              </div>
+
             </li>
           </ul>
         </div>
@@ -116,35 +125,51 @@
           <div class="container">
         <h2 class="our-portfolio-title">Our Portfolio</h2>
         <ul class="project-list">
-            <li>
+            <li class="project-list-point">
               <img src="./images/img-9.jpg" alt="banking-app" width="360">
+              <div class="project-list-info"></div>
               <h3 class="our-portfolio-example">Banking App</h3>
               <p class="our-portfolio-description">App</p>
             </li>
-            <li>
+            <li class="project-list-point">
               <img src="./images/img-8.jpg" alt="cashless-payment" width="360">
-              <h3 class="our-portfolio-example">Cashless Payment</h3>
-              <p class="our-portfolio-description">Marketing</p>
+              <div class="project-list-info">
+                <h3 class="our-portfolio-example">Cashless Payment</h3>
+                <p class="our-portfolio-description">Marketing</p>
+              </div>
+              
             </li>
-            <li>
+            <li class="project-list-point">
               <img src="./images/img-7.jpg" alt="meditation-app" width="360">
-              <h3 class="our-portfolio-example">Meditation App</h3>
-              <p class="our-portfolio-description">App</p>
+              <div class="project-list-info">
+                <h3 class="our-portfolio-example">Meditation App</h3>
+                <p class="our-portfolio-description">App</p>
+              </div>
+              
             </li>
-            <li>
+            <li class="project-list-point">
               <img src="./images/img-6.jpg" alt="taxi-service" width="360">
-              <h3 class="our-portfolio-example">Taxi Service</h3>
-              <p class="our-portfolio-description">Marketing</p>
+              <div class="project-list-info">
+                <h3 class="our-portfolio-example">Taxi Service</h3>
+                <p class="our-portfolio-description">Marketing</p>
+              </div> 
+                
             </li>
-            <li>
+            <li class="project-list-point">
               <img src="./images/img-5.jpg" alt="screen-illustrations" width="360">
-              <h3 class="our-portfolio-example">Screen Illustrations</h3>
-              <p class="our-portfolio-description">Design</p>
+              <div class="project-list-info">
+                <h3 class="our-portfolio-example">Screen Illustrations</h3>
+                <p class="our-portfolio-description">Design</p>
+              </div>
+            
             </li>
-            <li>
+            <li class="project-list-point">
               <img src="./images/img-4.jpg" alt="online-courses" width="360">
-              <h3 class="our-portfolio-example">Online Courses</h3>
-              <p class="our-portfolio-description">Marketing</p>
+              <div class="project-list-info">
+                <h3 class="our-portfolio-example">Online Courses</h3>
+                <p class="our-portfolio-description">Marketing</p>
+              </div>
+  
             </li>
           </ul>
         </div>

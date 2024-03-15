@@ -20,6 +20,10 @@ ul {
   padding-left: 0;
 }
 
+img{
+  display: block;
+}
+
 address:hover,
 address:focus {
   color: #404bbf;
@@ -37,32 +41,37 @@ address:focus {
   margin-right: auto;
   box-sizing: border-box;
 }
-header .container{
+.header{
   border-bottom: 1px solid #E7E9FC;
-  display: flex;
+}
+
+.header .container{
+    display: flex;
   flex-direction: row;
   justify-content: space-between;
   container: 156px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-}
-header .container nav{
-  display: flex;
-  flex-direction: row;
+  align-items: center;
 
 }
 
-header .container .address ul{
+.header .container .address ul{
   display: flex;
   flex-direction: row;
 }
 
-nav ul{
+.nav{
+  align-items: center;
+  display: flex;
+}
+
+.nav .nav-list{
   display: flex;
   flex-direction: row;
   gap: 40px;
   padding-left: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
 }
 
 
@@ -74,6 +83,7 @@ nav ul{
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
+  margin-right:76px ;
 }
 
 .studio-logo{
@@ -93,15 +103,22 @@ nav ul{
 }
 
 .address-link{
-  padding-left: 40px;
+  margin-right: 40px;
+}
+.address-link:nth-child(2){
+  margin-right: 40;
 }
 
+
 .section{
-padding-top: 120px;
-padding-bottom: 120px;
+padding-top: 188px;
+padding-bottom: 188px;
 }
 
 .top-title{
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -111,7 +128,9 @@ padding-bottom: 120px;
 }
 
 .button {
-  
+  min-width: 169px;
+  height: 56px;
+  border:none;
   cursor: pointer;
   background-color: #4D5AE5;
   font-weight: 500;
@@ -126,26 +145,34 @@ padding-bottom: 120px;
   margin: 0 auto;
 }
 
+.visually-hidden{
+  overflow: hidden;
+}
 
 
-.title-qualities{
+
+.list-qualities {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+
+
+.list-qualities-point{
+  width:calc((100%-24px*3)/4);
+}
+
+.title-qualities {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.02em;
   color:#2e2f42;
   padding-top: 32px;
-  padding-bottom: 8px;
-}
-
-.list-qualities {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
-.list-qualities li{
-  width: 264px;
+  /* padding-bottom: 8px; */
+  width: calc((100%-3*24px)/4);
+  margin-bottom: 8px;
 }
 
 .address{
@@ -213,15 +240,23 @@ section:nth-child(3){
   display: flex;
   flex-direction: column;
   text-align: center;
+  border-radius: 0 0 4px 4px;
+  
+}
+
+.person-card-info{
+  padding: 32px 0 32px; 
 }
 
 
 
-.our-team .title-qualities{
+.person-card .title-qualities{
   background-color:#ffffff;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color:#2E2F42;
+  text-align: center;
+  margin-bottom: 8px;;
 
 }
 
@@ -229,6 +264,7 @@ section:nth-child(3){
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+text-align: center;
 }
 
 .qualities-description{
@@ -242,22 +278,41 @@ letter-spacing: 0.02em;
   flex-direction: column;
 }
 
+.our-portfolio-title{
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color:#2E2F42 ;
+ margin-bottom: 72px;
+}
+
+
 .project-list{
- display: flex;
+display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  /*решение для переноса блоков в рядок, если родитель имеет фиксированную ширину*/
   gap: 24px;
+  row-gap: 48px;
 }
 
-.project-list li{
+.project-list-point{
+  width:((100%48px)/3);
+}
+
+.project-list-info{
   border: solid 1px #E7E9FC;
-  width:358px;
+  width:((100%48px)/3);
+  border-top: none;
 }
 
-.project-list li img{
+
+
+/* .project-list li img{
   padding-bottom: 32px;
   background-size: cover;
-}
+} */
 
 .our-portfolio-example{
   font-weight: 500;
@@ -265,7 +320,7 @@ letter-spacing: 0.02em;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color:#2E2F42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   margin-left: 16px;
   
 }
@@ -278,15 +333,6 @@ letter-spacing: 0.02em;
   margin-left: 16px;
   }
 
-.our-portfolio-title{
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color:#2E2F42 ;
-  padding-bottom: 72px;
-}
 
 
 footer{
@@ -297,12 +343,14 @@ footer{
 
 
 .footer .studio-logo{
+  display: inline-block;
+  margin-bottom: 16px;
   color:#f4f4fd ;
   
 }
 
 .footer-paragraph{
-  padding-top: 8px;
+  /* padding-top: 8px; */
   line-height: 1.5;
   color:#F4F4FD ;
   letter-spacing: 0.02em;

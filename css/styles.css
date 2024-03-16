@@ -88,21 +88,16 @@ address:focus {
   flex-direction: row;
   gap: 40px;
   padding-left: 76px;
-
-  
 }
 
-.nav ul li{
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.link{
+.link-header{
   color: #2E2F42;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .link:hover,
@@ -150,13 +145,22 @@ padding-bottom: 188px;
   margin: 0 auto;
 }
 
-main section:nth-child(2),
-main section:nth-child(3)
-main section:nth-child(4){
+main .section:nth-child(2),
+main .section:nth-child(3)
+main .section:nth-child(4){
   padding: 120px 0;
 }
 
 .visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 

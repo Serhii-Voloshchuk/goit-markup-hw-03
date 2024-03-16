@@ -59,9 +59,6 @@ address:focus {
   flex-direction: row;
 }
 
-
-
-
 .logo{
   font-weight:700;
   font-size: 18px;
@@ -88,16 +85,18 @@ address:focus {
   flex-direction: row;
   gap: 40px;
   padding-left: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
 }
 
 .link-header{
+  display: inline-block;
   color: #2E2F42;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
 }
 
@@ -147,7 +146,8 @@ padding-bottom: 188px;
 }
 
 .section-our-team,
-.section-our-portfolio {
+.section-our-portfolio,
+.section-qualities {
   padding: 120px 0 120px 0;
 }
 /* main .section:nth-child(2),

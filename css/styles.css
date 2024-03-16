@@ -88,6 +88,8 @@ address:focus {
   flex-direction: row;
   gap: 40px;
   padding-left: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .link-header{
@@ -96,8 +98,7 @@ address:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
 }
 
 .link:hover,
@@ -145,11 +146,15 @@ padding-bottom: 188px;
   margin: 0 auto;
 }
 
-main .section:nth-child(2),
+.section-our-team,
+.section-our-portfolio {
+  padding: 120px 0 120px 0;
+}
+/* main .section:nth-child(2),
 main .section:nth-child(3)
 main .section:nth-child(4){
   padding: 120px 0 120px 0;
-}
+} */
 
 .visually-hidden{
   position: absolute;

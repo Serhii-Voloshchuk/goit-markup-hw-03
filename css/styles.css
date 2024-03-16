@@ -59,20 +59,7 @@ address:focus {
   flex-direction: row;
 }
 
-.nav{
-  align-items: center;
-  display: flex;
-}
 
-.nav .nav-list{
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  padding-left: 76px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  
-}
 
 
 .logo{
@@ -89,6 +76,27 @@ address:focus {
 .studio-logo{
   color: #2e2f42;
 }
+
+
+.nav{
+  align-items: center;
+  display: flex;
+}
+
+.nav .nav-list{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-left: 76px;
+
+  
+}
+
+.nav ul li{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .link{
   color: #2E2F42;
   font-weight: 500;
@@ -102,11 +110,8 @@ address:focus {
   color:#404bbf;
 }
 
-.address-link{
-  margin-right: 40px;
-}
-.address-link:nth-child(2){
-  margin-right: 40;
+.address-title{
+  gap:40px;
 }
 
 
@@ -143,6 +148,12 @@ padding-bottom: 188px;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+}
+
+main section:nth-child(2),
+main section:nth-child(3)
+main section:nth-child(4){
+  padding: 120px 0;
 }
 
 .visually-hidden{
@@ -302,6 +313,7 @@ display: flex;
 }
 
 .project-list-info{
+  padding: 32px 16px;
   border: solid 1px #E7E9FC;
   width:((100%48px)/3);
   border-top: none;
@@ -320,8 +332,9 @@ display: flex;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color:#2E2F42;
-  margin-bottom: 8px;
+  
   margin-left: 16px;
+  margin-bottom: 8px;
   
 }
 .our-portfolio-description{
@@ -340,11 +353,14 @@ footer{
   padding-bottom: 100px;
 }
 
+.footer .container .logo{
+  display: inline-block;
+  margin-bottom: 16px;
+}
 
 
 .footer .studio-logo{
-  display: inline-block;
-  margin-bottom: 16px;
+
   color:#f4f4fd ;
   
 }
@@ -356,4 +372,5 @@ footer{
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+
 

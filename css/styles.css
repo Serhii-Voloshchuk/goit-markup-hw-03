@@ -148,7 +148,7 @@ padding-bottom: 188px;
 main .section:nth-child(2),
 main .section:nth-child(3)
 main .section:nth-child(4){
-  padding: 120px 0;
+  padding: 120px 0 120px 0;
 }
 
 .visually-hidden{
